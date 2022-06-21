@@ -131,15 +131,19 @@ button {
   font-family: 'Red Hat Text';
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
   color: #FFFFFF;
+  width: 228px;
+  height: 59px;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 .button__login {
   width: 103px;
   height: 41px;
   padding: 10px 30px;
+  font-size: 16px;
+  line-height: 21px;
 }
 
 /*section preview styles start*/
@@ -150,6 +154,70 @@ button {
   position: relative;
   top: -90px;
   z-index: -1;
+}
+
+.preview__plan { 
+  width: 892px;
+  height: 422px;
+  position: absolute;
+  left: 120px;
+  top: 122px;
+
+}
+
+.preview__plan_title {
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 96px;
+  color: #FFFFFF;
+
+}
+
+.preview__plan_text{
+  font-family: 'Aleo';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  width: 723px;
+  height: 24px;
+  position: absolute;
+  left: 0px;
+  top: 224px;
+}
+
+.plan_search {
+  position: absolute;
+  width: 892px;
+  height: 95px;
+  left: 0px;
+  top: 294px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 16px;
+}
+
+.plan_search_text {
+  background-color: transparent;
+  font-family: 'Aleo';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F2785C;
+  margin: 32px 291px 41px 41px;
+}
+
+.plan_search_text::placeholder {
+  font-family: 'Aleo';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F2785C;
+  color: #F2785C;
 }
 
 /*section preview styles end  */

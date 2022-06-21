@@ -221,3 +221,40 @@ button {
 }
 
 /*section preview styles end  */
+
+/*footer style start*/
+
+.footer {
+  background-color: #0D606F; /*убрать когда поставлю фоновую картинку*/
+  height: 36px;
+}
+.footer__container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 729px;
+  position: relative;
+  left: 590px;
+}
+.footer__container_text {
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+
+}
+
+.icon{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.icon:last-child{
+  margin-right: 0;
+}
+
+
+/*footer style end*/

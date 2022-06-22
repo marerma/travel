@@ -9,8 +9,6 @@
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
 
 html,body{
 	height: 100%;
@@ -27,8 +25,6 @@ input,button,textarea{font-family:inherit;}
 input::-ms-clear{display: none;}
 button{cursor: pointer;}
 button::-moz-focus-inner {padding:0;border:0;}
-a, a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
 ul li{list-style: none;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit;}
@@ -88,11 +84,19 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;}
   max-width: 1440px;
   margin: 0 auto;
   height: 100%;
+  background: url(./assets/img/up.jpg) no-repeat, url(./assets/img/down.jpg) no-repeat bottom left;
+  position: relative;
+  z-index: -1;
+}
+
+.content {
+  padding-bottom: 61px;
+  min-height: 100%;
 }
 
 /*header style start*/
 .header__container {
-  width: 1440px;
+  max-width: 1440px;
   height: 90px;
   background-color: rgba(242, 120, 92, 0.7);
   box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
@@ -102,7 +106,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;}
   justify-content: space-around;
 }
 
-.header__navigation {
+.header__navigation-list {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -110,16 +114,24 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;}
 
 .header__navigation_item {
   margin-right: 42px;
+}
+
+.header__navigation_item:last-child {
+  margin-right: 0;
+}
+
+.navigation-link {
   font-family: 'Red Hat Text';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
-  color: #FFFFFF;;
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
-.header__navigation_item:last-child {
-  margin-right: 0;
+.navigation-link:hover {
+  text-decoration: underline;
 }
 
 /*header styles start*/
@@ -148,12 +160,12 @@ button {
 
 /*section preview styles start*/
 .preview {
-  background: url(./assets/img/up.jpg) no-repeat;
-  width: 1440px;
+ /* background: url(./assets/img/up.jpg) no-repeat; удалить, если нормально остальные секции встанут
   height: 765px;
+   top: -90px;
+  z-index: -1;*/
+  max-width: 1440px;
   position: relative;
-  top: -90px;
-  z-index: -1;
 }
 
 .preview__plan { 
@@ -217,7 +229,6 @@ button {
   font-size: 24px;
   line-height: 29px;
   color: #F2785C;
-  color: #F2785C;
 }
 
 /*section preview styles end  */
@@ -225,8 +236,9 @@ button {
 /*footer style start*/
 
 .footer {
-  background-color: #0D606F; /*убрать когда поставлю фоновую картинку*/
-  height: 36px;
+  height: 61px;
+  margin-top: -61px;
+  
 }
 .footer__container{
   display: flex;
@@ -237,6 +249,7 @@ button {
   position: relative;
   left: 590px;
 }
+
 .footer__container_text {
   font-family: 'Red Hat Text';
   font-style: normal;

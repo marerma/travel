@@ -83,15 +83,17 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;}
 .allwrapper {
   max-width: 1440px;
   margin: 0 auto;
-  height: 100%;
-  background: url(./assets/img/up.jpg) no-repeat, url(./assets/img/down.jpg) no-repeat bottom left;
+  min-height: 100vh;
+  background: url(./assets/img/up.jpg) no-repeat; 
+  /*url(./assets/img/down.jpg) no-repeat bottom;*/
   position: relative;
-  z-index: -1;
+  z-index: 1;
 }
 
 .content {
   padding-bottom: 61px;
-  min-height: 100%;
+  position: relative;
+  z-index: 2;
 }
 
 /*header style start*/
@@ -166,15 +168,15 @@ button {
   z-index: -1;*/
   max-width: 1440px;
   position: relative;
+  margin-bottom: 253px;
 }
 
 .preview__plan { 
   width: 892px;
   height: 422px;
-  position: absolute;
+  position: relative;
   left: 120px;
-  top: 122px;
-
+  top: 32px;
 }
 
 .preview__plan_title {
@@ -184,7 +186,6 @@ button {
   font-size: 80px;
   line-height: 96px;
   color: #FFFFFF;
-
 }
 
 .preview__plan_text{
@@ -196,17 +197,14 @@ button {
   color: #FFFFFF;
   width: 723px;
   height: 24px;
-  position: absolute;
-  left: 0px;
-  top: 224px;
+  margin-bottom: 46px;
+  margin-top: 26px;
 }
 
 .plan_search {
-  position: absolute;
+  position: relative;
   width: 892px;
   height: 95px;
-  left: 0px;
-  top: 294px;
   background: rgba(255, 255, 255, 0.7);
   border-radius: 16px;
 }
@@ -232,6 +230,54 @@ button {
 }
 
 /*section preview styles end  */
+
+.steps {
+  max-width: 1440px;
+  max-height: 424px;
+  padding: 80px 132px 97px 131px;
+}
+
+.steps__container {
+  width: 1177px;
+  height: 247px;
+}
+
+ .steps__container-title {
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 53px;
+  color: #F2785C;
+  text-align: center;
+ }
+ 
+ .steps__container-icons {
+  width: 1177px;
+  height: 154px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ }
+
+ .icon-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+
+ .icon-item__text {
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #0D606F;
+
+ }
 
 /*footer style start*/
 
@@ -268,6 +314,5 @@ button {
 .icon:last-child{
   margin-right: 0;
 }
-
 
 /*footer style end*/

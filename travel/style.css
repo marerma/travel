@@ -299,6 +299,14 @@ h2 {
   margin-left: 605px;
 }
 
+.destinations__button-decor, .stories__button-decor {
+  background-image: url(./assets/icons/bi_arrow-right.svg);
+  background-position: 31px 9.5px;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  padding-left: 50px;
+}
+
 .destinations__container-title {
   font-family: 'Red Hat Text';
   font-style: normal;

@@ -27,7 +27,7 @@ button{cursor: pointer;}
 button::-moz-focus-inner {padding:0;border:0;}
 ul li{list-style: none;}
 
-h1,h2,h3,h4,h5,h6{font-size:inherit;}
+/*h1,h2,h3,h4,h5,h6{font-size:inherit;}*/
 
 
 /* aleo-regular - latin */
@@ -84,14 +84,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;}
   max-width: 1440px;
   margin: 0 auto;
   min-height: 100vh;
-  background: url(./assets/img/up.jpg) no-repeat; 
-  /*url(./assets/img/down.jpg) no-repeat bottom;*/
+  background: url(./assets/img/up.jpg) no-repeat, url(./assets/img/Rectangle\ 27.jpg) no-repeat bottom;
   position: relative;
   z-index: 1;
 }
 
 .content {
-  padding-bottom: 61px;
+  padding-bottom: 60px;
   position: relative;
   z-index: 2;
 }
@@ -179,7 +178,7 @@ button {
   top: 32px;
 }
 
-.preview__plan_title {
+.preview__plan-title {
   font-family: 'Aleo';
   font-style: normal;
   font-weight: 700;
@@ -231,6 +230,7 @@ button {
 
 /*section preview styles end  */
 
+/*section steps styles start */
 .steps {
   max-width: 1440px;
   max-height: 424px;
@@ -242,7 +242,7 @@ button {
   height: 247px;
 }
 
- .steps__container-title {
+h2 {
   font-family: 'Red Hat Text';
   font-style: normal;
   font-weight: 500;
@@ -250,34 +250,168 @@ button {
   line-height: 53px;
   color: #F2785C;
   text-align: center;
- }
+  text-transform: uppercase;
+}
  
- .steps__container-icons {
+.steps__container-icons {
   width: 1177px;
   height: 154px;
   margin-top: 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
- }
+}
 
- .icon-item {
+.icon-item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
- }
+  height: 154px;
+}
 
-
- .icon-item__text {
+.icon-item__text {
   font-family: 'Aleo';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   color: #0D606F;
+}
 
- }
+ /*section steps styles end  */
+
+ /*section destinations styles start */
+.destinations {
+  width: 2520px;
+  height: 1042px;
+  position: relative;
+  left: -540px;
+}
+
+.destinations__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.destinations__button {
+  margin-left: 605px;
+}
+
+.destinations__container-title {
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 53px;
+  color: #F2785C;
+  text-align: center;
+}
+
+.destinations__slider {
+  width: 2520px;
+  height: 800px;
+  margin-top: 46px;
+  margin-bottom: 84px;
+  position: relative;
+  left: -540px;
+  display: flex;
+  flex-direction: row;
+}
+
+.slider-image-box {
+  position: relative;
+}
+
+.slider-image-title {
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+  color: #FFFFFF;
+  position: relative;
+  top: -82px;
+  left: 15px;
+  text-transform: uppercase;
+}
+
+.slider-image {
+  background: url(.jpg), #FFFFFF;
+  border-radius: 16px;
+  margin-right: 60px;
+  display: block;
+}
+
+.slider-image:last-child {
+  margin-right: 0;
+}
+/*section destinations styles end  */
+
+.stories__container {
+  width: 1200px;
+  height: 1322px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  top: -80px;
+}
+
+.stories__container-title {
+  margin-bottom: 80px;
+}
+
+.stories-items {
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 400;
+  color: #0D606F;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.stories-bg {
+  background-color: rgba(255, 255, 255, 0.7);
+  max-width: 1440px;
+  height: 1271px;
+  margin-top: 173px;
+}
+
+.stories-items__text {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.stories-items__title {
+  font-size: 35px;
+  line-height: 42px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.stories-items__img {
+  filter: drop-shadow(0px 4px 4px #0D606F);
+  border-radius: 16px;
+  margin-right: 35px;
+}
+
+.more, .more:visited {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  font-weight: bold;
+  color: #0D606F;
+}
+
+.stories__button {
+  margin: 0 auto;
+}
 
 /*footer style start*/
 
@@ -293,7 +427,8 @@ button {
   justify-content: space-between;
   width: 729px;
   position: relative;
-  left: 590px;
+  margin-top: 15px;
+  margin-left: 560px;
 }
 
 .footer__container_text {
@@ -303,7 +438,6 @@ button {
   font-size: 16px;
   line-height: 21px;
   color: #FFFFFF;
-
 }
 
 .icon{

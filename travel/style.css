@@ -19,12 +19,12 @@ html,body{
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
+   scroll-behavior: smooth;
 }
 input,button,textarea{font-family:inherit;}
 
 input::-ms-clear{display: none;}
 button{cursor: pointer;}
-button::-moz-focus-inner {padding:0;border:0;}
 ul li{list-style: none;}
 
 /*h1,h2,h3,h4,h5,h6{font-size:inherit;}*/
@@ -84,13 +84,14 @@ ul li{list-style: none;}
   max-width: 1440px;
   margin: 0 auto;
   min-height: 100vh;
-  background: url(./assets/img/up.jpg) no-repeat, url(./assets/img/Rectangle\ 27.jpg) no-repeat bottom;
+  background: url(./assets/img/up.jpg) no-repeat, url(./assets/img/Rectangle_27.jpg) no-repeat bottom;
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 
 .content {
-  padding-bottom: 60px;
+  padding-bottom: 65px;
   position: relative;
   z-index: 2;
 }
@@ -104,7 +105,9 @@ ul li{list-style: none;}
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-left: 120px;
+  padding-right: 120px;
 }
 
 .header__navigation-list {
@@ -129,10 +132,12 @@ ul li{list-style: none;}
   line-height: 21px;
   color: #FFFFFF;
   text-decoration: none;
+  transition: all 0.5s ease-in;
 }
 
 .navigation-link:hover {
-  text-decoration: underline;
+  color: #0D606F;;
+  transition: all 1s ease;
 }
 
 /*header styles start*/
@@ -149,6 +154,12 @@ button {
   height: 59px;
   font-size: 24px;
   line-height: 32px;
+  transition: 1s ease;
+}
+
+button:hover {
+  box-shadow: none;
+  transition: 1s ease;
 }
 
 .button__login {
@@ -158,13 +169,13 @@ button {
   font-size: 16px;
   line-height: 21px;
 }
+.button__login:hover{
+  transform:scale(0.9);
+}
+
 
 /*section preview styles start*/
 .preview {
- /* background: url(./assets/img/up.jpg) no-repeat; удалить, если нормально остальные секции встанут
-  height: 765px;
-   top: -90px;
-  z-index: -1;*/
   max-width: 1440px;
   position: relative;
   margin-bottom: 253px;
@@ -174,8 +185,8 @@ button {
   width: 892px;
   height: 422px;
   position: relative;
-  left: 120px;
-  top: 32px;
+  margin-left: 120px;
+  margin-top: 32px;
 }
 
 .preview__plan-title {
@@ -196,8 +207,8 @@ button {
   color: #FFFFFF;
   width: 723px;
   height: 24px;
-  margin-bottom: 46px;
-  margin-top: 26px;
+  margin-bottom: 48px;
+  margin-top: 31px;
 }
 
 .plan_search {
@@ -208,6 +219,12 @@ button {
   border-radius: 16px;
 }
 
+.plan_search_button:hover {
+  transform:scale(0.9);
+}
+
+
+
 .plan_search_text {
   background-color: transparent;
   font-family: 'Aleo';
@@ -216,7 +233,11 @@ button {
   font-size: 24px;
   line-height: 29px;
   color: #F2785C;
-  margin: 32px 291px 41px 41px;
+  margin-top: 32px;
+  margin-bottom: 41px;
+  margin-left: 41px;
+  margin-right: 66px;
+  min-width: 60%;
 }
 
 .plan_search_text::placeholder {
@@ -234,7 +255,7 @@ button {
 .steps {
   max-width: 1440px;
   max-height: 424px;
-  padding: 80px 132px 97px 131px;
+  padding: 50px 132px 97px 131px;
 }
 
 .steps__container {
@@ -256,7 +277,7 @@ h2 {
 .steps__container-icons {
   width: 1177px;
   height: 154px;
-  margin-top: 40px;
+  margin-top: 42px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -268,6 +289,10 @@ h2 {
   justify-content: space-between;
   align-items: center;
   height: 154px;
+}
+
+.icon-item:nth-child(2){
+padding-left: 80px;
 }
 
 .icon-item__text {
@@ -305,6 +330,10 @@ h2 {
   background-size: 40px;
   background-repeat: no-repeat;
   padding-left: 50px;
+}
+
+.destinations__button-decor:hover, .stories__button-decor:hover{
+  transform:scale(0.9);
 }
 
 .destinations__container-title {
@@ -359,13 +388,13 @@ h2 {
 
 .stories__container {
   width: 1200px;
-  height: 1322px;
+  height: 1320px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  top: -80px;
+  top: -75px;
 }
 
 .stories__container-title {
@@ -386,8 +415,8 @@ h2 {
 .stories-bg {
   background-color: rgba(255, 255, 255, 0.7);
   max-width: 1440px;
-  height: 1271px;
-  margin-top: 173px;
+  height: 1270px;
+  margin-top: 152px;
 }
 
 .stories-items__text {
@@ -400,7 +429,7 @@ h2 {
   font-size: 35px;
   line-height: 42px;
   font-weight: 400;
-  margin-bottom: 24px;
+
 }
 
 .stories-items__img {
@@ -418,6 +447,14 @@ h2 {
   color: #0D606F;
 }
 
+.more:hover {
+  color: #F2785C;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  font-weight: bold;
+}
+
 .stories__button {
   margin: 0 auto;
 }
@@ -425,10 +462,12 @@ h2 {
 /*footer style start*/
 
 .footer {
-  height: 61px;
-  margin-top: -61px;
-  
+  min-height: 65px;
+  margin-top: -65px;
+  position: relative;
+  z-index: 2;
 }
+
 .footer__container{
   display: flex;
   flex-direction: row;
@@ -449,12 +488,18 @@ h2 {
   color: #FFFFFF;
 }
 
-.icon{
-  display: inline-block;
+.icon__list{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.icon__list-element{
   margin-right: 20px;
 }
 
-.icon:last-child{
+.icon__list-element:last-child{
   margin-right: 0;
 }
 

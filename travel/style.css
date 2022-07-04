@@ -387,6 +387,10 @@ h2 {
   margin-right: 0;
 }
 
+.prev, .next {
+  visibility: hidden;
+}
+
 .slider__checker {
   height: 20px;
   margin: 0 auto;
@@ -1089,6 +1093,7 @@ h2 {
 .icon-item__text {
   font-size: 10px;
   line-height: 12px;
+  text-align:start;
 }
 
 .icon-item {
@@ -1159,6 +1164,25 @@ img[src*="slider_rectangle_23.jpg"] {
   position: absolute;
   top: 10px;
   left: 15px;
+}
+
+.prev, .next {
+  visibility: visible;
+  background: url(./assets/icons/ep_arrow-up-bold.svg) no-repeat;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 51%;
+}
+
+.prev {
+  transform: rotate(-180deg);
+  opacity: 0.5;
+  left: .5%; /*5px;*/
+}
+
+.next {
+  left: 30%; /*325px;*/
 }
 
 .slider__checker {

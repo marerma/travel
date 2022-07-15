@@ -937,8 +937,7 @@ h2, .destinations__container-title {
 @media (max-width: 391px) {
   .allwrapper {
     max-width: 390px;
-    background: url(./assets/img/up_mobile.jpg) no-repeat;
- 
+    background: linear-gradient(180deg, #0D606F 0%, rgba(13, 96, 111, 0) 5% ), url(./assets/img/up_mobile.jpg) no-repeat ;
    }
   
    .header__container, 
@@ -1313,6 +1312,10 @@ img[src*="slider_rectangle_23.jpg"] {
 
 .stories__container {
   padding: 10px 15px;
+}
+
+.stories-bg {
+  background: url(./assets/img/down-mobile.jpg) no-repeat;
 }
 
 .stories-items__img {

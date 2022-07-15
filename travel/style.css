@@ -77,6 +77,15 @@ ul li{list-style: none;}
        url('./assets/fonts/red-hat-text-v11-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+@font-face {
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('./assets/fonts/RedHatText-VariableFont_wght.ttf') format('truetype');    
+}
+
+
 .allwrapper {
   max-width: 1440px;
   margin: 0 auto;
@@ -546,6 +555,194 @@ h2 {
 .menu__burger__header {
   display: none;
 }
+
+.popup{
+  width: 650px;
+  height: 660px;
+  background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  padding: 25px 45px;
+  position: absolute;
+  top: 4.5%;
+  left: 27%;
+}
+
+.popup_socialmedia-buttons {
+  display: flexbox;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 190px;
+  max-width: 100%;
+}
+
+.fb-button, .google-button {
+ width: 560px;
+ height: 56px;
+ border-radius: 10px;
+ background: #1877F2;
+ box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+ font-family: 'Red Hat Text';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 20px;
+ line-height: 26px;
+ color: #FFFFFF;
+ margin-bottom: 20px;
+ text-align: center;
+ padding-top: 15px;
+ padding-left: 40px;
+ position: relative;
+}
+
+.fb-button:before {
+  content: url(./assets/icons/fb.png);
+  position: absolute;
+  left: 164px;
+}
+
+.google-button:before {
+  content: url(./assets/icons/ggl.png);
+  position: absolute;
+  left: 174px;
+}
+
+
+.google-button{
+  background: #FFFFFF;
+  color: #0D606F;
+  margin-bottom: 30px;
+}
+
+.popup-line{
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(13, 96, 111, 0.5);
+  text-align: center;
+  position: relative;
+
+}
+
+.popup-line:before {
+  content: "";
+  display: block;
+  width: 261px;
+  border-bottom: 1px rgba(13, 96, 111, 0.5) solid;
+  top: 50%;
+  position: absolute;
+ 
+}
+
+.popup-line:after {
+  content: "";
+  display: block;
+  width: 261px;
+  border-bottom: 1px rgba(13, 96, 111, 0.5) solid;
+  top: 50%;
+  position: absolute;
+  right: 0px;
+}
+
+.popup__header {
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #0D606F;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+.get-login-data {
+  display: flexbox;
+  flex-direction: column;
+  padding-top: 5px;
+  justify-content: space-between;
+}
+
+.login-text {
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0D606F;
+  margin-bottom: 5px;
+}
+
+.sign-button {
+  width: 560px;
+  height: 56px;
+  background: #0D606F;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px; 
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 15px;
+  margin-top: 5px;
+}
+
+.login-input {
+  width: 560px;
+  height: 56px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  border-radius: 10px; 
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #0D606F;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 18px;
+}
+
+.question-forgot, 
+.question-forgot:hover, 
+.question-forgot:visited, 
+.question-forgot-link,
+.popup-link,
+.account-question {
+  width: 100%;
+  font-family: 'Aleo';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  color: #0D606F;
+  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+  text-align: center;
+}
+
+.question-forgot {
+  margin-bottom: 26px;
+}
+.account-question {
+  color: rgba(13, 96, 111, 0.5);
+  text-decoration-line: none;
+  padding: 20px;
+}
+
+.popup-line-account{
+  border-top: 1px solid rgba(13, 96, 111, 0.5);
+  transform: rotate(0.1deg);
+}
+
+
 
 @media (max-width: 1121px) {
   .preview__plan-title, .preview__plan-title {

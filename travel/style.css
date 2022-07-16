@@ -709,7 +709,7 @@ h2 {
   font-size: 16px;
   line-height: 19px;
   color: #0D606F;
-  margin-bottom: 15px;
+ 
 }
 
 .sign-button {
@@ -726,13 +726,13 @@ h2 {
   color: #FFFFFF;
   margin-bottom: 10px;
   text-align: center;
-  padding: 15px;
   margin-top: 5px;
 }
 
 .login-input {
+  display: block;
   width: 100% /*560px*/;
-  height: 56px;
+  height: 53px;
   background: #FFFFFF;
   box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
   border-radius: 10px; 
@@ -743,8 +743,9 @@ h2 {
   line-height: 26px;
   color: #0D606F;
   text-align: center;
-  padding: 30px;
-  margin-bottom: 19px;
+  padding: 0px;
+  margin-bottom: 16px;
+  margin-top: 10px;
 }
 
 .question-forgot, 
@@ -765,18 +766,27 @@ h2 {
   text-align: center;
 }
 
+.account-question, .popup-link {
+  display: inline-block;
+  width: auto;
+}
+
 .question-forgot {
   margin-bottom: 26px;
 }
+
 .account-question {
   color: rgba(13, 96, 111, 0.5);
   text-decoration-line: none;
-  padding: 20px;
+  padding: 10px;
+  padding-left: 29%;
+
 }
 
 .popup-line-account{
   border-top: 1px solid rgba(13, 96, 111, 0.5);
   transform: rotate(0.1deg);
+  padding-top: 10px;
 }
 
 
@@ -1938,6 +1948,9 @@ img[src*="Rectangle_29.jpg"] {
   font-size: 12px;
   line-height: 14px;
 }
+
+.account-question {
+  padding-left: 15%;
 
 .question-forgot {
   margin-bottom: 16px;

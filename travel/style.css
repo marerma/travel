@@ -709,7 +709,7 @@ h2 {
   font-size: 16px;
   line-height: 19px;
   color: #0D606F;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .sign-button {
@@ -743,8 +743,8 @@ h2 {
   line-height: 26px;
   color: #0D606F;
   text-align: center;
-  padding: 10px;
-  margin-bottom: 18px;
+  padding: 30px;
+  margin-bottom: 19px;
 }
 
 .question-forgot, 

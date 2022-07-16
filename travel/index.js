@@ -63,7 +63,23 @@ menuMobile.addEventListener('click', function (event) {
       closePopUp(overlay)
     })
 
+    const signIn = document.querySelector('.sign-button')
     
+    
+   signIn.addEventListener('click', (event) => {
+     event.preventDefault()
+     let form = document.querySelector('.get-login-data')
+     let useremail = form.elements.useremail.value
+     let password = form.elements.userpassword.value
+     alert(`Your Emais: ${useremail} \nYour password: ${password}`) 
+    })
+   
+
+
+
+    
+  
+
 
 
 

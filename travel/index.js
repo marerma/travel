@@ -116,8 +116,41 @@ registration.addEventListener('click', () => {
 })
 
 
-  
-  
-  
+/*SLIDER*/
 
-/*console.log('Моя самооценка - 75 баллов: \nВёрстка соответствует макету. Ширина экрана 390px +48; \n Ни на одном из разрешений до 320px включительно не появляется горизонтальная полоса прокрутки. Весь контент страницы при этом сохраняется: не обрезается и не удаляется +15; \nНа ширине экрана 390рх и меньше реализовано адаптивное меню +22')*/
+let slider = document.querySelector('.destinations__slider')
+let slides = document.querySelectorAll('.slider-image-box')
+let dots = document.querySelectorAll('.dots')
+let dotOne = document.querySelector('.checker-1')
+
+let position = 0
+
+function toLeft () {
+  for (dot of dots) {
+    dot.classList.remove('active')
+  }
+  slider.style.left = position - 860 + 'px'
+  dots[2].classList.add('active')
+}
+
+function toRight () {
+  for (dot of dots) {
+    dot.classList.remove('active')
+  }
+  slider.style.left = position + 860 + 'px'
+  dots[0].classList.add('active')
+}
+
+function toCenter () {
+  for (dot of dots) {
+    dot.classList.remove('active')
+  }
+  slider.style.left = position + 'px'
+  dots[1].classList.add('active')
+}
+
+slides[0].addEventListener('click', ()=> {toRight()})
+slides[1].addEventListener('click', ()=> {toCenter()})
+slides[2].addEventListener('click', ()=> {toLeft()})
+
+

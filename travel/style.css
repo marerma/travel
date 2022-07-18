@@ -358,15 +358,29 @@ h2 {
   text-align: center;
 }
 
-.destinations__slider {
+.slider-container {
   width: 175%; /*2520px;*/
   height: 800px;
   margin-top: 45px;
   margin-bottom: 25px;
   position: relative;
-  left:-37.5%;/* -540px;*/
+  left: -37.5%;/* -540px;*/
+}
+
+.destinations__slider {
+  /*width: 175%; /*2520px;
+  height: 800px;
+  margin-top: 45px;
+  margin-bottom: 25px;
+  position: relative;
+  left: /*-37.5%; -540px;*/
+  position: relative;
+  left: 0px;
+  max-width: 1440px;
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap; 
+  transition: 1s ease-in;
 }
 
 .slider-image-box {
@@ -409,14 +423,14 @@ h2 {
   max-width: 80px;
 }
 
-.checker-1, .checker-2, .checker-3 {
+.dots {
   width: 20px;
   height: 20px;
   background: rgba(242, 120, 92, 0.5);
   border-radius: 50%;
 }
 
-.checker-2 {
+.dots.active {
   background: rgba(242, 120, 92, 1);
 }
 
@@ -861,6 +875,7 @@ h2, .destinations__container-title {
   width: 500px;
   height: 500px;
   margin-right: 35px;
+
 }
 
 .slider-image {
@@ -1951,6 +1966,7 @@ img[src*="Rectangle_29.jpg"] {
 
 .account-question {
   padding-left: 15%;
+}
 
 .question-forgot {
   margin-bottom: 16px;

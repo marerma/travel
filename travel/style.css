@@ -581,7 +581,7 @@ h2 {
   position: absolute;
   transform: translate(0, -127%);
   z-index: 8;
-  transition: all 0.5s ease;
+  transition: all 1s ease;
   top: 4.5%;
   left: 27%;
 }
@@ -595,7 +595,7 @@ h2 {
   visibility: visible;
   position: absolute;
   transform: translate(0, 0);
-  transition: all 0.5s ease;
+  transition: all 1s ease;
   z-index: 8;
 }
 
@@ -868,14 +868,6 @@ h2, .destinations__container-title {
   margin-bottom: 15px;
   position: relative;
   left: 0%;
-}
-
-.destinations__slider {
-  /*width: 175%; /*2520px;
-  left:-5%;/* -540px;*/
-  /*height: 500px;
-  margin-top: 30px;
-  margin-bottom: 15px;*/
 }
 
 .slider-image-box {
